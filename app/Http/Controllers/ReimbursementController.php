@@ -14,7 +14,7 @@ class ReimbursementController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**

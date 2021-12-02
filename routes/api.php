@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReimbursementController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'refund'], function () {
+Route::group(['prefix' => 'reimbursement'], function () {
     Route::resource('/', ReimbursementController::class);
     Route::post('/create', 'App\Http\Controllers\ReimbursementController@store');
     Route::post('/update/{id}', 'App\Http\Controllers\ReimbursementController@update');
